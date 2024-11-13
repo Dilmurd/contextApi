@@ -1,0 +1,60 @@
+// Counter.scss
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s;
+  
+    &.dark-mode {
+      background: linear-gradient(135deg, #1e1e30, #2c2c54);
+      color: #c9aaf1;
+    }
+  
+    &.light-mode {
+      background: linear-gradient(135deg, #f0f0f5, #d6d6e3);
+      color: #333;
+    }
+  }
+      .counter-container {
+          padding: 2rem;
+          border-radius: 15px;
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+          text-align: center;
+          width: 200px;
+          margin: 0 auto;
+          transition: background-color 0.3s, color 0.3s;
+          &.dark {
+              background-color: #22223b;
+              color: #c9aaf1;
+            }
+            
+            &.light {
+                background-color: #f5f5f5;
+                color: #333;
+            }
+        }
+        .button-container{
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            .dec-btn{
+                padding: 10px 20px;
+                background-color: #000;
+                color: #ffff;
+                font-weight: 600;
+                font-size: 16px;
+                border: none;
+            }
+            .inc-btn{
+                margin-top: 10px;
+                border: none;
+                padding: 10px 20px;
+                background-color: #000;
+                color: #ffff;
+                font-weight: 600;
+                font-size: 16px;
+            }
+        }
+            
+  // Other styles remain the same...
+  
